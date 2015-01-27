@@ -1,9 +1,9 @@
-
+FROM nalai/centos6-oraclejava8
+MAINTAINER Nathaniel Lai "nathaniel.lai@retrievercommunications.com"
 
 #Install Tomcat 7
 
 #Download the latest Tomcat 7 and copy to /usr/local
-
 RUN yum -y install tar
 RUN wget "http://apache.mirror.uber.com.au/tomcat/tomcat-7/v7.0.57/bin/apache-tomcat-7.0.57.tar.gz" \
 		 -O /apache-tomcat-7.0.57.tar.gz && \
